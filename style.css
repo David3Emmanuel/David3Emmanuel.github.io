@@ -33,6 +33,9 @@ header a h1 {
   margin: 0;
 }
 /* SECTION */
+section {
+  min-height: 200px;
+}
 .projects li a {
   color: black;
 }
