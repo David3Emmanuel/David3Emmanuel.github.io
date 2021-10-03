@@ -2,7 +2,6 @@ body {
   background-color: floralwhite;
   margin: 0;
   padding: 0;
-  /*padding-top: 10px;*/
 }
 header,section,footer {
   margin: 0;
@@ -33,9 +32,6 @@ header a h1 {
   margin: 0;
 }
 /* SECTION */
-section {
-  min-height: 200px;
-}
 .projects li a {
   color: black;
 }
