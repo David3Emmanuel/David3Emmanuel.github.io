@@ -1,0 +1,50 @@
+body {
+  background-color: floralwhite;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+header,section,footer {
+  margin: 0;
+}
+/* HEADER */
+header,footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+header nav,footer {
+  padding: 5px;
+}
+header nav ul,footer {
+  display: flex;
+}
+header nav ul li {
+  width: 30%;
+  display: inline-block;
+  text-transform: uppercase;
+}
+header nav ul li a, header a {
+  color: white;
+  text-decoration: none;
+}
+header a h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+/* SECTION */
+.projects li a {
+  color: black;
+}
+/* FOOTER */
+footer * {
+  font-size: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+footer a {
+  text-decoration: none;
+}
+footer a.email {
+  text-transform: none;
+}
