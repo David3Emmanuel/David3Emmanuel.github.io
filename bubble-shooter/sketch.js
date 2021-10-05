@@ -1,6 +1,7 @@
+'use strict';
 let rows = 4;
 let cols = 10;
-let bubbles;
+let bubbles, shooter, ball;
 let scl;
 
 function setup() {
@@ -18,13 +19,23 @@ function setup() {
       bubbles[i][j] = new Bubble(i,j);
     }
   }
+  shooter = new Shooter();
+  ball = new Ball();
 }
 
 function draw() {
   background(200);
+  shooter.update();
+  ball.update();
   for (let row of bubbles) {
     for (let b of row) {
       b.show();
     }
   }
+  shooter.show();
+  ball.show();
+}
+
+function mouseReleased() {
+  ball.releaseFrom(shooter);
 }

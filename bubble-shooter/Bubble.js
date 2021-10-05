@@ -1,8 +1,14 @@
+let colors = [
+  color(255,0,0),
+  color(0,255,0),
+  color(0,0,255)
+  ];
+
 class Bubble {
   constructor(i,j) {
     this.i = i;
     this.j = j;
-    this.c = color(random(255),random(255),random(255));
+    this.c = random(colors);
   }
   
   show() {
