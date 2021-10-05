@@ -1,0 +1,9 @@
+class Shooter {
+  constructor() {
+    
+  }
+  
+  show() {
+    
+  }
+}

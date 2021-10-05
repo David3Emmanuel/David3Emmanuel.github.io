@@ -35,11 +35,18 @@ header a h1 {
 .projects li a {
   color: black;
 }
+blockquote {
+  font-style: italic;
+  border-left: 5px solid gray;
+  padding-left: 10px;
+  font-size: 10px;
+}
 /* FOOTER */
 footer * {
   font-size: 5px;
   color: white;
   text-transform: uppercase;
+  width: 100%;
 }
 footer a {
   text-decoration: none;
