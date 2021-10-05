@@ -13,7 +13,8 @@ class Shooter {
   }
   
   show() {
-    fill(0);
+    stroke(55);
+    fill(100);
     push();
     translate(this.pos.x,this.pos.y);
     rotate(this.dir);

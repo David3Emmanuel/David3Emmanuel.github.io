@@ -1,20 +1,18 @@
-let colors = [
-  color(255,0,0),
-  color(0,255,0),
-  color(0,0,255)
-  ];
-
 class Bubble {
   constructor(i,j) {
     this.i = i;
     this.j = j;
-    this.c = random(colors);
+    this.c = random(bubbleColors);
   }
   
   show() {
-    noStroke();
+    stroke(brightness(this.c));
     fill(this.c);
     ellipseMode(CORNER);
     ellipse(this.j*scl,this.i*scl,scl,scl);
+    noStroke();
+    fill(255,150);
+    ellipseMode(CENTER);
+    ellipse(this.j*scl+3*scl/4,this.i*scl+scl/4,scl/5,scl/5);
   }
 }
